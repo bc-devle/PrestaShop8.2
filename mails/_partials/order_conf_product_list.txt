@@ -11,7 +11,7 @@
 						{$product['price']}
 
 	{foreach $product['customization'] as $customization}
-							{$customization['customization_text']}
+							{$customization['customization_text'] nofiter}
 
 							{if count($product['customization']) > 1}
 								{$customization['customization_quantity']}
